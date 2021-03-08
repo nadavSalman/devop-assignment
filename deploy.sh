@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-
-
 remove_services() {
     docker-compose stop
     docker-compose rm
