@@ -1,4 +1,5 @@
 #!/bin/bash
+source conf
 
 remove_services() {
     docker-compose stop
@@ -24,7 +25,7 @@ deploy_services() {
 
 #main
 main() {
-    source conf
+    
     deploy_services
     while true; do 
         app_health_check    
