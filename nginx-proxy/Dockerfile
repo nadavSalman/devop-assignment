@@ -1,13 +1,6 @@
-FROM nginx:stable-alpine
+FROM nginx
 
 
-
-# CMD ["ls","/etc/nginx/"] 
-# CMD ["cat","/etc/nginx/conf.d/default.conf"] 
-
-
-#
-# COPY content/data/www /usr/share/nginx/html
 
 
 # set new configuration :

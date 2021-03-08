@@ -1,0 +1,12 @@
+version: "3.7"
+services: 
+  webapp:
+    image: tutum/hello-world
+  
+  
+  nginxproxy:
+    build: nginx-proxy
+    ports:
+      - 81:80
+    depends_on:
+      - webapp

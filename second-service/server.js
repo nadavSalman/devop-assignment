@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 4000
 
-app.get('/', (req, res) => {
+app.get('/app', (req, res) => {
   console.log('app get request');
-  res.send('Hello World')
+  res.send('Hello World - second service.')
 })
 
 app.listen(port, () => {
