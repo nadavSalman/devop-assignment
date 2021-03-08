@@ -7,7 +7,7 @@ remove_services() {
 
 # perform end point /app health check with curl
 app_health_check(){
-    CURRENT_STATUS=$(curl -s -w "%{http_code}\n" -o /dev/null  $URL/app)
+    CURRENT_STATUS=$(curl -s -w "%{http_code}\n" -o /dev/null  "$URL"/app)
     if [ "$CURRENT_STATUS" = "200" ];
     then echo "Endpoint up"
     else echo "Endpoint down"
