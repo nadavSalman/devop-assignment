@@ -7,6 +7,6 @@ services:
   nginxproxy:
     build: nginx-proxy
     ports:
-      - 81:80
+      - 80:80
     depends_on:
       - webapp

@@ -2,10 +2,11 @@
 
 # shellcheck disable=SC1091
 source conf
+trap remove_services INT
 
 remove_services() {
-    docker-compose stop
-    docker-compose rm
+    docker-compose down
+    exit 0
 }
 
 # perform end point /app health check with curl

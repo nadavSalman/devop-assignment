@@ -1,2 +1,2 @@
-PROXY_PORT=81
+PROXY_PORT=80
 URL="http://localhost:$PROXY_PORT"
