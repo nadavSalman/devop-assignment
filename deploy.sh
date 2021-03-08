@@ -18,7 +18,7 @@ app_health_check(){
 deploy_services() {
     #list services
     echo "Deploy services:"
-    printf "%s \n" $(sudo docker-compose ps --services)
+    printf "%s \n" "$(sudo docker-compose ps --services)"
     docker-compose up --detach
 }
 
